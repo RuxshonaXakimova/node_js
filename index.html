@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="one">
+        <div class="container">
+            <div class="box_one">
+                <div class="one_left">
+                    <h1>Dashboard</h1>
+                    <button>Добавить задачу</button>
+                </div>
+                <div class="one_right">
+                    <button>Поиск по задачам</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="container">
+            <div class="box_two">
+                <p class="show_as">Показать задачи как:</p>
+                <p class="table">Таблица</p>
+                <p class="plit">Плитка</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="three">
+        <div class="container">
+            <div class="box_three">
+                
+                    <div class="thead">
+                        <div class="tr">
+                            <p class="td1">Заголовок задачи</p>
+                            <p class="td2">Описание задачи</p>
+                            <p class="td3">Дата</p>
+                            <p class="td4">Время</p>
+                            <p class="td5">Выполнено</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                        
+                    
+                
+
+                    <div class="tbody">
+                        <!-- <tr>
+                            <td>Переписать проект на Vue 3</td>
+                            <td>Quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit
+                                molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto</td>
+                            <td>21.10.21</td>
+                            <td>14:31</td>
+                            <td>Не выполнено</td>
+                        </tr> -->
+                    </div>
+                        
+                    
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="box_modal show">
+        <h1>Добавить</h1>
+        <div class="new_info">
+            <form name="new_info" class="form_new_info">
+                <input type="text" name="zagolovok" id="zagolovok">
+                <input type="text" name="opisaniye" id="opisaniye">
+                <input type="date" name="date" id="date">
+                <input type="time" name="time" id="time">
+                <div class="selecting">
+                    <label for="options">Тип задачи:</label>
+                    <select name="options"  id="options">
+                        <option value="new">new</option>
+                        <option value="progress">progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </div>
+
+                <button class="modal_btn_add">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="box_dbl_modal show">
+        <h1>Изменить</h1>
+        <div class="new_info">
+            <form name="dbl_new_info" class="dbl_form_new_info">
+                <input type="text" name="zagolovok" id="dbl_zagolovok">
+                <input type="text" name="opisaniye" id="dbl_opisaniye">
+                <input type="date" name="date" id="dbl_date">
+                <input type="time" name="time" id="dbl_time">
+                <div class="selecting">
+                    <label for="options">Тип задачи:</label>
+                    <select name="options" id="dbl_options">
+                        <option value="new">new</option>
+                        <option value="progress">progress</option>
+                        <option value="done">done</option>
+                    </select>
+                </div>
+
+                <button class="modal_btn_add">Изменить</button>
+            </form>
+            <button class="modal_btn_remove">Удалить</button>
+        </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
